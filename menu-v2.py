@@ -9,7 +9,6 @@ def menu(title, prompt, options):
         action = input(prompt)
         if action in options:
             return action
-            break
         else:
             continue
 

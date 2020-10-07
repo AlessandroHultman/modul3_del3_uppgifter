@@ -9,7 +9,6 @@ def menu(title, prompt, options):
         action = input(prompt)
         if action in options:
             return action
-            break
         else:
             continue
 
@@ -20,7 +19,6 @@ def login(users):
         password = input("Password: ")
         if user in users and password == users[user]:
             return user
-            break
         else:
             print("\nInvalid username or password")
             action = menu("", "Option: ", options)

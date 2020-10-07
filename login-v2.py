@@ -6,7 +6,6 @@ def login(users):
         password = input("Password: ")
         if user in users and password == users[user]:
             return user
-            break
         else:
             print("\nInvalid username or password\n")
             continue
